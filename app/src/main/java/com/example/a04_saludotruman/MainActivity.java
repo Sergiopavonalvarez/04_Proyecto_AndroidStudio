@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void saludo (View vista) {
+    public void saludo(View vista) {
 
         TextView txt = findViewById(R.id.textView);
         CheckBox dia = findViewById(R.id.dia);
@@ -44,37 +44,26 @@ public class MainActivity extends AppCompatActivity {
             saludo += "Buenas noches";
         }
 
-        saludo += f()+ ""+apellido;
+        saludo += f() + "" + apellido;
         txt.setText(saludo);
         txt.setVisibility(View.VISIBLE);
     }
 
-    public String f(){
+    public String f() {
 
-        RadioGroup r=findViewById(R.id.radiogroup);
-        RadioButton h=findViewById(r.getCheckedRadioButtonId());
+        RadioGroup r = findViewById(R.id.radiogroup);
+        RadioButton h = findViewById(r.getCheckedRadioButtonId());
 
-        if(h != null){
+        if (h != null) {
             Toast.makeText(getApplicationContext(), "¡Buenos dias, buenas tardes y buenas noches!", Toast.LENGTH_LONG).show();
             return h.getText().toString();
 
         }
+        //hhhhh
 
         return "";
     }
 
 
-
-
-
-
-
-
-
-
-
-        
-
-
-    }
+}
 
