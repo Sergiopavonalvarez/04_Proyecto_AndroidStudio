@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:id="@+id/tarde"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:text="tarde"
+        android:onClick="saludo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <CheckBox
+        android:id="@+id/noche"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:text="noche"
+        android:onClick="saludo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <CheckBox
+        android:id="@+id/dia"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:text="dia"
+        android:onClick="saludo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="262dp"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322">
+
+        <RadioButton
+            android:id="@+id/Sr."
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+
+
+            android:text="Sr" />
+
+        <RadioButton
+            android:id="@+id/na_1"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+
+
+            android:text="N_A" />
+
+        <RadioButton
+            android:id="@+id/Srta."
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+
+            android:text="Srta." />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="363dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="368dp"
+        android:layout_height="304dp"
+        android:onClick="saludo"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
