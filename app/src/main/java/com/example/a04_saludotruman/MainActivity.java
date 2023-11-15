@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
         if (dia.isChecked()) {
             Toast.makeText(getApplicationContext(), "¡Buenos dias, buenas tardes y buenas noches!", Toast.LENGTH_LONG).show();
-            saludo += "Buenos dias";
+            saludo += "Buenos dias ";
         }
         if (tarde.isChecked()) {
             Toast.makeText(getApplicationContext(), "¡Buenos dias, buenas tardes y buenas noches!", Toast.LENGTH_LONG).show();
-            saludo += "Buenas tardes";
+            saludo += "Buenas tardes ";
         }
         if (noche.isChecked()) {
             Toast.makeText(getApplicationContext(), "¡Buenos dias, buenas tardes y buenas noches!", Toast.LENGTH_LONG).show();
-            saludo += "Buenas noches";
+            saludo += "Buenas noches ";
         }
 
         saludo += f() + "" + apellido;
@@ -59,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
             return h.getText().toString();
 
         }
-        //hhhhh
-
         return "";
     }
 
